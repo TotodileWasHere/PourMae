@@ -17,7 +17,7 @@
 
     #wow, p{
     font-family: "Outfit", sans-serif;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     font-weight: 600;
     color: black;
     }
