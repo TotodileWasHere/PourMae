@@ -45,6 +45,7 @@ function custom(){
     const custom = document.getElementById("name")
     choix = custom.value
     doaction = secondAction
+    secondAction()
 }
 
 document.getElementById("closeModal").addEventListener("click", () => {
@@ -55,7 +56,7 @@ document.getElementById("closeModal").addEventListener("click", () => {
 
 document.getElementById("chose").addEventListener("click", () => {
     choix = choixtemp
-    doaction = secondAction
+    
     modal.classList.add("hidden");
     
     document.body.className = ""
