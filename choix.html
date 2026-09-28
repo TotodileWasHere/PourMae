@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="script2.js"></script>
+  
+ 
+   <link href="style.css" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+</head>
+<body id="body">
+    <div id="first"  >
+        <h2 id="wow">Oh wow !</h2>
+        <img id="troll" src="https://images.emojiterra.com/google/android-11/512px/1f643.png">
+    </div>
+
+     
+
+    <div id="panier" data-aos="fade-up">
+        <div>
+            <p class="tt">clique sur les propositions pour voir les descriptions et reserver</p>
+         </div>
+        <div id="left">
+
+        </div>
+        <div id="right">
+            <div style="grid-area: one;" class="item" onclick="openModal('Patinoire', 'Que ça soit pour patiner, parler ou s\'éclater, la patinoire est parafaite ! Par son prix faible, son accessibilité simple (d\'ailleurs tu m\'avais parlé d\'une partinoire qui à l\'air trop cool avec une pente !!!) la patinoire est une sortie de choix (en plus il fait froid là-bas :D)', `https://www.petitport-nantes.fr/app/uploads/2022/09/Patinoire-Vincent-Jacques-525x441-c-default.jpg`, null)">
+                <img class ="itemI" src="https://www.petitport-nantes.fr/app/uploads/2022/09/Patinoire-Vincent-Jacques-525x441-c-default.jpg">
+                <p class="itemT">Patinoire</p>
+            </div>
+
+            <div style="grid-area: two;" class="item" onclick="openModal('Cinéma', `Classique de chez classique, le cinéma est une sortie offrant du divertissement pour tous ! Etant 2 rat, pôle sud est un endroit parfait pour la réunion des rongeurs avec ses places à 4€. Les magasins à coté offrent de nombreux moyens de flâner et de s'occuper :D`, `https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tv8Ydg3hlZpe2zNlFYoad4YKXUEXDsU3ydbmh7pdceLmmOtQaLokEjVbYLoCV9zfpWRMyT4fj_OzDXt3NX0i0AI0zuwjhVt56GMrCIoXrQzDfMjbxWxVkcYbpa_jmzoRpRywg=s680-w680-h510`, null)">
+                <img class ="itemI" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tv8Ydg3hlZpe2zNlFYoad4YKXUEXDsU3ydbmh7pdceLmmOtQaLokEjVbYLoCV9zfpWRMyT4fj_OzDXt3NX0i0AI0zuwjhVt56GMrCIoXrQzDfMjbxWxVkcYbpa_jmzoRpRywg=s680-w680-h510">
+                <p class="itemT">Cinéma</p>
+            </div>
+
+            <div style="grid-area: three;" class="item" onclick="openModal('Ciné à la mison', 'Il existe tellement de films dans ce bas monde, pourquoi se cantonner au ciné ? Que ce soit chez toi ou chez moi, on peut se faire du pop corn, prendre des sodas ou faire des mocktails et se poser devant un/des films de notre choix :D', `https://i0.wp.com/blog.son-video.com/wp-content/uploads/2022/08/unnamed-2.jpg?resize=696%2C572&ssl=1`, null)">
+                <img class ="itemI" src="https://i0.wp.com/blog.son-video.com/wp-content/uploads/2022/08/unnamed-2.jpg?resize=696%2C572&ssl=1">
+                <p class="itemT">Ciné maison</p>
+            </div>
+
+            <div style="grid-area: four;" class="item" onclick="openModal('Kangourous', `Sortant légèrement des sentiers battus, je te propose une idée complétement originale ! Je connais un jardin des kangourous près de Angers vraiment pas cher où on peut nourrir et passer du temps avec les kangourous, pique-niquer et tout ça c'est vraiment génial >:D`, `https://www.lejardindeskangourous.com/neon/front/images/showHome/picture2.jpg`, null)">
+                <img class ="itemI" src="https://www.lejardindeskangourous.com/neon/front/images/showHome/picture2.jpg">
+                <p class="itemT">Kangourous</p>
+            </div>
+
+            <div style="grid-area: five;" class="item" onclick="openModal('Vadrouille/pêche', 'Ahhh la vadrouille ! En plage, en fôret... c\'est vraiment un moyen simple de passer du bon temps et d\'échanger tout en se ressourçant avec les magnifiques paysages, par exemple on peut aller a pornic c\'est beau là-bas :), oh !! ou aller pêcher on en avait parlé :D', `https://www.deuxieme-adresse.com/wp-content/uploads/prl-vendee-foret-plage.jpg`, null)">
+                <img class ="itemI" src="https://www.deuxieme-adresse.com/wp-content/uploads/prl-vendee-foret-plage.jpg">
+                <p class="itemT">Vadrouille/pêche</p>
+            </div>
+
+            <div style="grid-area: six;" class="item" onclick="openModal('Jeux de société/vidéo', 'Sortie assez simple mais efficace. On se rejoint quelque part et on jour à ce qui nous donne envie :D', `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdp3qZyn-MqAS7_w-jCnCt_FDkGOVie-qGqo7l-6pqq49XyC6T5HC4AmMX&s=10`, null)">
+                <img class ="itemI" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdp3qZyn-MqAS7_w-jCnCt_FDkGOVie-qGqo7l-6pqq49XyC6T5HC4AmMX&s=10">
+                <p class="itemT">Jeux de société/vidéo</p>
+            </div>
+
+            <div style="grid-area: seven;" class="item" onclick="openModal('Trampoline park', 'Ahh, la on parle ! Simple et accessible, le trampoline park permet de faire les zouaves, d\'échanger, et de se déglinguer les cervicales :D (je parle de vécu :( )', `https://www.trampoline44.com/_ipx/f_webp&q_80&w_1280/medias/activite-piscine-mousse.jpg`, null)">
+                <img class ="itemI" src="https://www.trampoline44.com/_ipx/f_webp&q_80&w_1280/medias/activite-piscine-mousse.jpg">
+                <p class="itemT">Trampo park</p>
+            </div>
+            <div  style="grid-area: eight;" class="item">
+                <div>
+                     <input type="text" id="name" name="name" />
+                    <button id="submit" onclick="custom()">Je veux ça !</button>
+                </div>
+              
+                <p class="itemT">Tu peux proposer !</p>
+            </div>
+        </div>
+        <button id="end">continuer</button>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <img id="modal-Image">
+            <h2 id="modal-title">Temp Title</h2>
+            <p id="modal-text">Temp Text</p>
+            <button id="chose">Choisir</button>
+            <button id="closeModal">Fermer</button>
+        </div>
+    </div>
+
+    
+    
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+
+</body>
+</html>

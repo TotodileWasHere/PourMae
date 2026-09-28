@@ -1,0 +1,228 @@
+ body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      
+      background-color: rgb(255, 239, 254);
+    }
+
+    #first{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wow, p{
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    color: black;
+    }
+    
+    #carte{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        position: absolute;
+        align-self: center;
+        background-color: white;
+        border: 4px black solid;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 5%;
+    }
+   
+
+
+    #troll{
+        width: 250px;
+        height: 250px;
+    }
+
+    #trolle{
+        width: 350px;
+        height: 250px;
+    }
+
+    .tt{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+     .ttv{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+
+
+    #panier{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+    #right{
+        display: grid;
+        grid-template-areas: 
+        "one two three four" 
+        "five six seven eight"
+        ;
+        row-gap: 10rem; 
+        column-gap: 2rem;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        height: 125%;
+        margin-top: 5%;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        
+        
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 1rem;
+        border: 3px black solid;
+        
+    }
+
+    .itemI{
+        height: 250px;
+        width: 250px;
+    }
+    .itemT{
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        font-weight: 700;
+        text-shadow: none;
+        color: black;
+    }
+
+    .modal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(8px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.modal-content{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    width:400px;
+
+    text-align:center;
+    justify-items: center;
+}
+
+.modal-content h2{
+
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(2rem, 4vw, 2.4rem);
+    font-weight: 600;
+    color: black;
+    
+}
+
+
+
+.modal-content video{
+    margin-top: 20px;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+/* CSS */
+.modal-content button, .FB {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #004dc5;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-top: 20px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.modal-content #closeModal, .FB:hover,
+.modal-content #closeModal, .FB:focus {
+  background-color: #ff2600;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.modal-content #chose, .FB:hover,
+.modal-content #chose, .FB:focus {
+  background-color: #48ff00;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.modal-content button, .FB:hover {
+  transform: translateY(-1px);
+}
+
+.modal-content button, .FB:active {
+  background-color: #0b357a;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+#modal-Image{
+    height: 200px;
+    width: 200px;
+}
+
+#end{
+    color: red;
+    margin-top: 5%;
+}

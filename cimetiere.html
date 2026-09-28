@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="script3.js"></script>
+  
+ 
+   <link href="style.css" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+</head>
+<body id="body">
+    <div id="first"  >
+        <h2 id="wow">Super choix !</h2>
+        <img id="troll" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/380.png">
+    </div>
+
+     
+
+    <div id="panier" data-aos="fade-up">
+        <div>
+            <p class="ttv">Tu devrais comprendre pourquoi elles-ont pas été retenues, tu peux toujours cliquer dessus pour plus de détail ^^</p>
+         </div>
+        <div id="left">
+
+        </div>
+        <div id="right">
+            <div style="grid-area: one;" class="item" onclick="openModal('Escalader la tour Montparnasse', 'Sortie légèrement dangereuse, donc malheuresement non-retenue (mais de l\'escalade à l\'occasion je suis pas contre)', `https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/U2X5ENBEHFDFNCBGC3HXOZA5HI.jpg`, null)">
+                <img class ="itemI" src="https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/U2X5ENBEHFDFNCBGC3HXOZA5HI.jpg">
+                <p class="itemT">Escalader la tour Montparnasse</p>
+            </div>
+
+            <div style="grid-area: two;" class="item" onclick="openModal('Fixer un mur pendant 5h', `Surnommée 'la sortie du désespoir', cette idée ne fait absolument aucun sens, je sais même pas ce qu'elle fait là. Mais bon Feldup l'a fait alors pourquoi pas ?`, `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQig27wVlcnmAfNIC8Ug2uh3Pxecv2F1kdpfots9edrl8gbPSoZahq2tTg&s=10`, null)">
+                <img class ="itemI" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQig27wVlcnmAfNIC8Ug2uh3Pxecv2F1kdpfots9edrl8gbPSoZahq2tTg&s=10">
+                <p class="itemT">Fixer un mur pendant 5h</p>
+            </div>
+
+            <div style="grid-area: three;" class="item" onclick="openModal('Aller au pôle nord', `J'adorerai en vrai de vrai mais je crois que la thune et le temps posent un petit problème ! Dommage :D`, `https://static.nationalgeographic.fr/files/styles/image_3200/public/gettyimages-1446646686.jpg?w=1600&h=1067`, null)">
+                <img class ="itemI" src="https://static.nationalgeographic.fr/files/styles/image_3200/public/gettyimages-1446646686.jpg?w=1600&h=1067">
+                <p class="itemT">Aller au pôle nord</p>
+            </div>
+
+            <div style="grid-area: four;" class="item" onclick="openModal('Participer à un tournoi de belotte', `La photo est celle d'un chat nommé belotte (ouaip ça à aucun rapport déso). Ca serait super qu'on fasse un tournoi de belotte :D. Malheuresement je ne fais pas partie du CSPA (Cercle Secret des Personnes Agées) donc je peux pas l'organiser :( `, `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bMchLEH3URRYFYhHAfHPga7OYqQKrvlEv8c9T4eU4A&s=10`, null)">
+                <img class ="itemI" src="https://www.basketclubs.be/abctemploux/wp-content/uploads/sites/105/2019/03/Belote.jpg">
+                <p class="itemT">Participer à un tournoi de belotte</p>
+            </div>
+
+            <div style="grid-area: six;" class="item" onclick="openModal('Atteindre un niveau d\'âme', 'Ecoute-moi hein, j\'aurais adoré ! Mais c\'est un niveau d\'âme, une supériorité humaine que je n\'ai pas', `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3sscFu7XamU8bpj_XqoAuy_FX5KwpByYPY5e-VMT91x5-80IoSERvkhs&s=10`, null)">
+                <img class ="itemI" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3sscFu7XamU8bpj_XqoAuy_FX5KwpByYPY5e-VMT91x5-80IoSERvkhs&s=10">
+                <p class="itemT">Atteindre un niveau d'âme</p>
+            </div>
+
+            <div style="grid-area: seven;" class="item" onclick="openModal('Rencontrer le G.O.A.T.', 'Malheuresement, Philippe Etchebest ne fait pas partie de mes contacts, je suis donc dans l\'impossibilité d\'organiser cette rencontre :( (mais y\'a moi c\'est déja ça :D)', `https://www.produits-de-nouvelle-aquitaine.fr/wp-content/uploads/2024/08/philippe-etchebest.jpg`, null)">
+                <img class ="itemI" src="https://www.produits-de-nouvelle-aquitaine.fr/wp-content/uploads/2024/08/philippe-etchebest.jpg">
+                <p class="itemT">Rencontrer le G.O.A.T.</p>
+            </div>
+
+            
+        </div>
+        <button id="end">continuer</button>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <img id="modal-Image">
+            <h2 id="modal-title">Temp Title</h2>
+            <p id="modal-text">Temp Text</p>
+           
+            <button id="closeModal">Fermer</button>
+        </div>
+    </div>
+
+    
+    
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+
+</body>
+</html>

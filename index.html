@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgb(255, 239, 254);
+    }
+
+    #evil-button, #vrai-button {
+      position: absolute;
+      white-space: nowrap;
+      font-size: clamp(1.4rem, 2.4vw, 1.6rem);
+      height: 5%;
+      text-align: center;
+      width: 10%;
+      margin-bottom: 2%;
+    }
+    #bouton{
+      width: 100vw;
+      height: 50vh;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+    }
+
+    #titre{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 30%;
+    }
+    #vrai{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      
+      width: 100%;
+      height: 30%;
+    }
+
+    a{
+      color: black;
+      text-decoration: inherit;
+      display: inline-block;
+      height: 100%;
+      align-content: center;
+      width: 100%;
+    }
+
+    #titre h2, h5{
+    font-family: "Outfit", sans-serif;
+    
+    font-weight: 600;
+   
+    
+    color: black;
+   
+    margin-bottom: -2%;
+    transition: 1s;
+    }
+
+     #titre h2{
+      font-size: clamp(2rem, 4vw, 2.4rem);
+     }
+
+     #titre h5{
+      font-size: clamp(1.4rem, 2.4vw, 1.6rem);
+     }
+
+  </style>
+</head>
+<body>
+  <div id="titre">
+    <h2>Hey salut Maëva !!</h2>
+    <h5>Bienvenu sur le site de réservation de sortie officiel 2026© !!!</h5>
+    <h5>Tout d'abord, veux-tu sortir un de ces quatres :D ?</h5>
+  </div>
+  <div id='vrai'>
+    <button id="vrai-button"><a href="choix.html">yes</a></button>
+  </div>
+  <div id="bouton">
+    <button id="evil-button">nan</button>
+  </div>
+  
+</body>
+</html>
